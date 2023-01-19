@@ -1,6 +1,6 @@
 const { parse } = require("path");
 
-var input = require("fs").readFileSync("./1008/stdin", "utf8")
+var input = require("fs").readFileSync("./1009/stdin", "utf8")
 var lines = input.split("\n");
 
 
