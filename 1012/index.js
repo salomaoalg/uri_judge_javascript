@@ -1,21 +1,32 @@
-const { Console } = require("console");
-
 var input = require("fs").readFileSync("./1012/stdin", "utf8")
 var lines = input.split("\n");
 
 
-let A, B, C;
-
+let A, B, C, DADOS, ARRAY;
 DADOS = lines.shift();
+ARRAY = DADOS.split(" ", 3);
+
+A = parseFloat(ARRAY[0]);
+B = parseFloat(ARRAY[1]);
+C = parseFloat(ARRAY[2]);
+
+console.log("TRIANGULO:",((A * C) /2).toFixed(3));
+console.log("CIRCULO:",((C * C) * 3.14159).toFixed(3));
+console.log("TRAPEZIO:",(((A + B) * C) / 2).toFixed(3));
+console.log("QUADRADO:",(B * B).toFixed(3));
+console.log("RETANGULO:",(A * B).toFixed(3));
+
+
 //VETDADOS = parseInt(DADOS);
 ///console.log(DADOS);
 
-console.log(VETDADOS)
-A = parseFloat(DADOS.split(" ", 1));
-B = parseFloat(DADOS.split(" ", 2));
-C = parseFloat(DADOS.split(" ", 3));
+//console.log(VETDADOS)
+//NUMEROS = parseFloat(DADOS.split(" ", 3));
 
-//console.log(A,B,C);
+
+//console.log(typeof(NUMEROS));
+//console.log(NUMEROS);
+//console.log(TESTE);
 
 
 /*let RAIO, VOLUME;
