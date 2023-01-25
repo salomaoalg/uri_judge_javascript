@@ -1,10 +1,13 @@
-const { parse } = require("path");
-const internal = require("stream");
-
-var input = require("fs").readFileSync("./1010/stdin", "utf8")
+var input = require("fs").readFileSync("./1011/stdin", "utf8")
 var lines = input.split("\n");
 
-let TOTALA, TOTAL, QTDE, VALOR, CONT = 0, DADOS, ITEM;
+let RAIO, VOLUME;
+
+RAIO = parseInt(lines.shift());
+VOLUME = (4/3.0) * 3.14159 * Math.pow(RAIO, 3);
+console.log("VOLUME =",VOLUME.toFixed(3)) 
+
+/* let TOTALA, TOTAL, QTDE, VALOR, CONT = 0, DADOS, ITEM;
 // CODIGO, QTDE_PEÇAS, VL_UNIT
 while(CONT < 2){
     
@@ -18,6 +21,8 @@ while(CONT < 2){
     }
 }
 console.log("VALOR A PAGAR: R$",(TOTAL + TOTALA).toFixed(2));
+
+*/
 
 //console.log('TOTAL = R$', (SALARIO + ((VENDAS * 15)/ 100)).toFixed(2));
 
