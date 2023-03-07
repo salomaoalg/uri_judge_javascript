@@ -15,12 +15,3 @@ console.log('SALARY = U$', (SALARIO * HRST).toFixed(2))
 
 
 
-//var PI = 3.14159;
-//var RAIO = parseFloat(lines.shift());
-//var AREA =  PI * Math.pow(RAIO, 2);
-
-//console.log('A=' + AREA.toFixed(4));
-
-//Comando para DEPURAÇÃO/EXECUÇÃO/TESTE
-//Lembrando do arquivo STDIN com slipt 
-// node .\1003\script.js
