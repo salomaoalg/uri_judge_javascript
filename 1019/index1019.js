@@ -1,7 +1,7 @@
 var input = require("fs").readFileSync("./1019/stdin", "utf8")
 var lines = input.split("\n");
 
-let resto = 0; segundos = 0, horas = 0, minutos = 0; 
+let saida = ""; segundos = 0, horas = 0, minutos = 0; 
 segundos = parseInt(lines.shift());
 var tempo = [], cont = 0;
 
@@ -15,16 +15,20 @@ while(segundos >= 60){
         segundos = segundos - 60;
     }
 }
+saida = horas.toString() + ":" + minutos.toString() + ":" + segundos;
+console.log(saida);
+
+/*
 tempo[0] = horas.toString();
 tempo[1] = minutos.toString();
 tempo[2] = segundos.toString();
 
 while(cont < tempo.length){
-    tempo = tempo.push(':')
-    cont = cont + 1; 
-    console.log(tempo[cont]);
+    totals = totals + tempo[cont] + ":";
+    cont +=1;
 }
+console.log(totals);
 
-
+*/
 
 
