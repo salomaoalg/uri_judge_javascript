@@ -3,7 +3,7 @@ var lines = input.split("\n");
 
 var X, Y;
 NROS = lines.shift().split(" ").map(Number);
-Y = NROS;
+Y = toString(NROS);
 
 console.log(Y)
 
